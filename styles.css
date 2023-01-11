@@ -1,0 +1,61 @@
+.jumbotron{
+	background-color: rgb(25,47,65);
+	padding: 30px;
+	margin-top: 50px;
+	border-radius: 10px;
+}
+
+.well {
+	background-color: rgb(25,47,65);
+	padding: 10px;
+	margin-top: 25px;
+	border-radius: 10px;
+}
+
+#movies img, #movie img{
+	width: 100%;
+}
+
+#movies .col-md-3 {
+	transition: transform 0.5s ease-in;
+}
+
+#movies .col-md-3:hover{
+	transform: scale(1.1);
+}
+
+@media(min-width: 960px){
+	#movies .col-md-3 .well{
+	height: 430px;
+	}
+
+	#movies .col-md-3 img{
+		height: 300px;
+	}
+}
+
+h5{
+	margin-top: 10px;
+}
+
+div.col-md-4{
+	position: relative;
+	overflow: hidden;
+}
+
+div.col-md-4 p{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 94%;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #4e5d6c;
+	transform: translateY(100%);
+	transition: transform 0.5s ease-in;
+}
+
+div.col-md-4:hover p{
+	transform: translateY(0);
+}
